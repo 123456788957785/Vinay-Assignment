@@ -35,7 +35,7 @@ Implementation and Best Practices
 2. RBAC Middleware
    - Middleware dynamically validates roles and permissions.
    - Example:
-     ```javascript
+     javascript
      const checkRole = (role) => {
        return (req, res, next) => {
          if (req.user && req.user.role === role) {
@@ -56,9 +56,9 @@ Implementation and Best Practices
        "password": "hashed_password",
        "role": "admin"
      }
-     ```
+     
    - Roles Collection:
-     ```json
+     json
      {
        "role": "admin",
        "permissions": ["create", "read", "update", "delete"]
@@ -79,7 +79,6 @@ Authorization
 RBAC
 - `GET /rbac`: Demonstrates role-based access control.
 
----
 
 Example Workflow
 
